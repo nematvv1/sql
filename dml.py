@@ -1,3 +1,23 @@
+-- select product_name, category_id from products
+-- where category_id>3
+-- order by product_name
+
+-- select * from customers  where company_name like 'n%'
+
+-- select * from customers where region='UK' and company_name like '%a'
+
+-- select avg(unit_price) from products
+
+-- select * from orders
+-- where shipped_date>required_date and order_date >= date '1997-07-01' and order_date <  date '1997-08-01'
+
+-- select * from products
+-- where category_id=3 and unit_price=(select max(unit_price) from products where category_id=3)
+
+
+
+# ////////////////// pastdagi jadval boyicha
+
 
 create table categories (
     category_id serial primary key,
